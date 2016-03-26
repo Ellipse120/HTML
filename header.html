@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lizard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            height: 100%;
+            margin: 0px;
+            background: #fff;
+        }
+        
+        body {
+            border: 15px solid #eee;
+            box-sizing: border-box;
+        }
+        
+        svg {
+            width: 770px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .one {
+            fill: url(#one);
+        }
+        
+        .two {
+            fill: url(#two);
+        }
+        
+        .three {
+            fill: url(#three);
+        }
+        
+        .four {
+            fill: url(#four);
+        }
+        
+        .five {
+            fill: url(#five);
+        }
+        
+        .six {
+            fill: url(#six);
+        }
+        
+        .seven {
+            fill: url(#seven);
+        }
+        
+        .static {
+            fill: url(#static);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="http://tholman.com" target="_blank">
+            <svg width="731px" height="298px" viewBox="0 0 731 298">
+
+                <pattern id="static" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/static.gif" x="0" y="0" width="700" height="375" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="one" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/1.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="two" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/2.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="three" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/3.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="one" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/1.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="four" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/4.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="five" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/5.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="six" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/6.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <pattern id="seven" patternUnits="objectBoundingBox" width="1" height="1">
+                    <image xlink:href="https://s3.amazonaws.com/tholman.com/img/7.gif" x="0" y="0" width="700" height="250" preserveAspectRatio="none" />
+                </pattern>
+
+                <path d="M71.33,297.51 L202.46,297.51 L202.46,273.95 L177.66,240.47 L177.66,58.19 C178.59,58.19 179.21,58.5 180.14,59.12 C188.82,77.41 194.4,97.25 193.78,113.68 L221.99,149.02 L245.24,149.02 L245.24,36.18 L217.03,0.84 L0.34,0.84 L0.34,113.68 L28.55,149.02 L52.11,149.02 C51.8,146.85 51.8,144.68 51.8,142.2 C51.8,124.84 58.31,102.52 67.92,85.16 L67.92,231.48 C67.92,240.78 68.23,240.47 58.93,240.47 L43.12,240.47 L43.12,262.17 L71.33,297.51 Z M281.57,297.51 L410.22,297.51 L410.22,273.95 L384.8,240.47 L384.8,66.87 C384.8,57.57 384.49,57.88 394.41,57.88 L410.22,57.88 L410.22,36.18 L382.01,0.84 L253.05,0.84 L253.05,22.54 L278.16,53.54 L278.16,233.65 C278.16,240.16 278.16,240.47 269.17,240.47 L253.36,240.47 L253.36,262.17 L281.57,297.51 Z M539.55,297.82 L582.33,297.51 L587.6,278.29 L602.79,297.51 L730.2,297.51 L730.2,274.26 L704.78,240.47 L704.78,66.87 C704.78,57.57 704.47,57.88 714.39,57.88 L730.2,57.88 L730.2,36.18 L701.99,0.84 L598.45,0.84 L572.41,102.21 L555.05,35.25 L527.46,0.84 L419.89,0.84 L419.89,22.54 L444.38,53.23 L444.07,231.48 C444.07,240.16 443.76,240.47 434.77,240.47 L418.96,240.47 L418.96,262.17 L447.17,297.51 L523.43,297.51 L523.43,277.67 L539.55,297.82 Z M510.72,257.83 L496.77,240.47 L497.08,206.99 L510.72,257.83 Z"></path>
+                <path class="inner static" d="M49.63,260 L171.15,260 L171.15,246.98 L161.85,246.98 C148.83,246.98 146.35,244.5 146.35,231.48 L146.35,23.16 C146.35,20.06 147.9,20.06 149.76,20.06 C174.56,20.37 200.29,77.1 200.29,111.51 L213.93,111.51 L213.93,7.35 L6.85,7.35 L6.85,111.51 L20.49,111.51 C20.49,77.1 46.22,20.37 71.02,20.06 C72.88,20.06 74.43,20.06 74.43,23.16 L74.43,231.48 C74.43,244.5 71.95,246.98 58.93,246.98 L49.63,246.98 L49.63,260 Z M259.87,260 L378.91,260 L378.91,246.98 L369.61,246.98 C356.59,246.98 354.11,244.5 354.11,231.48 L354.11,35.87 C354.11,22.85 356.59,20.37 369.61,20.37 L378.91,20.37 L378.91,7.35 L259.56,7.35 L259.56,20.37 L268.86,20.37 C281.88,20.37 284.67,22.85 284.67,35.87 L284.67,233.65 C284.67,244.5 281.57,246.98 269.17,246.98 L259.87,246.98 L259.87,260 Z M517.85,260.31 L552.57,260 L605.89,60.05 L605.89,231.48 C605.89,244.5 603.41,246.98 590.39,246.98 L581.09,246.98 L581.09,260 L698.89,260 L698.89,246.98 L689.59,246.98 C676.57,246.98 674.09,244.5 674.09,231.48 L674.09,35.87 C674.09,22.85 676.57,20.37 689.59,20.37 L698.89,20.37 L698.89,7.35 L603.41,7.35 L564.35,160.49 L524.36,7.35 L426.4,7.35 L426.4,20.37 L435.7,20.37 C447.48,20.37 450.58,22.23 451.2,32.15 L450.58,231.48 C450.27,244.81 447.48,246.98 434.77,246.98 L425.47,246.98 L425.47,260 L490.57,260 L490.57,246.98 L481.27,246.98 C468.25,246.98 465.77,244.5 465.77,231.48 L465.77,63.15 L517.85,260.31 Z"></path>
+            </svg>
+        </a>
+
+    </header>
+
+    <script language="javascript">
+        var static = "static";
+        var gifs = ["one", "two", "three", "four", "five", "six", "seven"];
+        var numberCount = 0;
+
+        changeImage();
+
+        function changeImage() {
+
+            numberCount = numberCount + 1;
+            if (numberCount >= gifs.length) {
+                numberCount = 0;
+            }
+
+            document.querySelector('.inner').setAttribute("class", "inner " + gifs[numberCount]);
+
+            setTimeout(staticImg, 2000);
+            setTimeout(changeImage, 3000);
+        }
+
+        function staticImg() {
+            document.querySelector('.inner').setAttribute("class", "inner static");
+        }
+    </script>
+
+</body>
+
+</html>

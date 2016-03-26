@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testQRLogin</title>
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <div>
+            <img src="?"  id="src" width="300px">
+            <!--<input type="color">
+            <input type="date">
+            <input type="month">
+            <input type="week">
+            <input type="time">
+            <input type="datetime">
+            -->
+            
+        </div>
+        <div id="test">adf</div>
+         <script language="javascript">
+             var x = "";
+             for(var i=0;i<8;i++){
+                 x += (Math.floor(Math.random()*10))
+             }
+        var srcAddress ="http://qr.liantu.com/api.php?&bg=ffffff&fg=cc0000&text="+x;
+        document.getElementById("src").src = srcAddress;
+             
+        </script>
+    </body>
+</html>

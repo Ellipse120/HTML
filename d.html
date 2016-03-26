@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        body {
+  background: #f5bf3f;
+  display: flex;
+  justify-content: center;
+}
+
+.jake {
+  padding-top: 50px;
+}
+
+.face {
+  background: #f5bf3f;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.eye {
+  background: #000;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye:after {
+  background: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  content: "";
+  animation: shake .1s infinite ease-in-out alternate;
+}
+
+.eye:before {
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  content: "";
+  animation: shake .1s infinite ease-in-out alternate;
+}
+
+@keyframes shake {
+    from { transform: translateX(-1px) }
+    to   { transform: translateX(1px) }
+}
+
+.cheek-left {
+  border-top: 4px solid #000;
+  background: #f5bf3f;
+  width: 150px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -45px;
+  right: 0px;
+}
+
+.cheek-left:before {
+  border-bottom: 4px solid #000;
+  background: #f5bf3f;
+  width: 60px;
+  height: 5px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 30px;
+  display: inline-block;
+  content: "";
+}
+
+.cheek-right {
+  border-top: 4px solid #000;
+  background: #f5bf3f;
+  width: 150px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -45px;
+  right: 0px;
+  text-align: right;
+}
+
+.cheek-right:before {
+  border-bottom: 4px solid #000;
+  background: #f5bf3f;
+  width: 60px;
+  height: 5px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 30px;
+  display: inline-block;
+  content: "";
+}
+
+.mustache {
+  border: 4px solid #000;
+  border-bottom: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 65px;
+  left: 95px;
+  background: linear-gradient(to bottom, #f5bf3f 50%, rgba(0,0,0,0) 50%);
+}
+
+.mustache-cut {
+  background: rgba(0,0,0,0,);
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: -10px;
+  left:-6px;
+  z-index: 1;
+  border-left: 6px solid #f5bf3f;
+  border-right: 6px solid #f5bf3f;
+}
+
+.mustache:before {
+  border: 4px solid #000;
+  border-top: 0;
+  background: #f5bf3f;
+  width: 60px;
+  height: 50px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: 50px;
+  left: -4px;
+  z-index: 2;
+  content: "";
+}
+
+.mustache:after {
+  border: 4px solid #000;
+  border-top: 0;
+  background: #f5bf3f;
+  width: 60px;
+  height: 50px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: 50px;
+  right: -4px;
+  z-index: 2;
+  content: "";
+}
+
+.nose {
+  background: #000;
+  width: 95px;
+  height: 55px;
+  border-radius: 45%;
+  position: absolute;
+  top: 52px;
+  left: 52px;
+  z-index: 3;
+}
+
+.mouth {
+  border: 4px solid #000;
+  background: #862328;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 62px;
+  left: 45px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.tooth-left {
+  border: 4px solid #000;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 45%;
+  position: absolute;
+  bottom: 15px;
+  left: 11px;
+  z-index: 1;
+}
+
+.tooth-center {
+  border: 4px solid #000;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 45%;
+  position: absolute;
+  bottom: 12px;
+  right: 35px;
+  z-index: 1;
+}
+
+.tooth-right {
+  border: 4px solid #000;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 45%;
+  position: absolute;
+  bottom: 15px;
+  right: 11px;
+  z-index: 1;
+}
+
+.tongue {
+  background: #ea6e74;
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  z-index: 1;
+}
+
+.arms {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.arm {
+  width: 95px; /*Fix render bug*/
+  height: 200px;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  display: flex;
+  animation: hands-up 1s infinite ease-in-out alternate;
+}
+
+.finger-left {
+   width: 30px;
+   height: 30px;
+   border: 4px solid #000;
+   border-bottom: 0;
+   border-radius: 50% 50% 0 0;
+   margin-top: -30px;
+   margin-left: -4px;
+}
+
+.finger-center {
+   width: 30px;
+   height: 30px;
+   border: 4px solid #000;
+   border-bottom: 0;
+   border-radius: 50% 50% 0 0;
+   margin-top: -30px;
+   margin-left: -4px;
+}
+
+.finger-right {
+   width: 30px;
+   height: 30px;
+   border: 4px solid #000;
+   border-bottom: 0;
+   border-radius: 50% 50% 0 0;
+   margin-top: -30px;
+   margin-left: -4px;
+   margin-right: -4px;
+}
+
+@keyframes hands-up {
+    0% { transform: translateY(0) }
+    100%   { transform: translateY(-20px) }
+}
+    </style>
+    
+    
+</head>
+<body>
+    
+    <div class="jake">
+  
+  <div class="face">
+    <div class="eye">
+      <div class="cheek-left"></div>
+    </div>
+    <div class="eye">
+      <div class="cheek-right"></div>
+    </div>
+    <div class="mustache">
+      <div class="nose"></div>
+      <div class="mouth">
+        <div class="tooth-left"></div>
+        <div class="tooth-center"></div>
+        <div class="tooth-right"></div>
+        <div class="tongue"></div>
+      </div>
+      <div class="mustache-cut"></div>
+    </div>
+  </div>
+
+  <div class="arms">
+    <div class="arm">
+      <div class="finger-left"></div>
+      <div class="finger-center"></div>
+      <div class="finger-right"></div>
+    </div>
+    <div class="arm">
+      <div class="finger-left"></div>
+      <div class="finger-center"></div>
+      <div class="finger-right"></div>
+    </div>
+  </div>
+  
+</div>
+    
+</body>
+</html>
